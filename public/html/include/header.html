@@ -1,0 +1,88 @@
+<header>    
+      <div class="container-fluid">
+          <nav class="navbar navbar-inverse">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs_navbar" >
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">职位后台管理系统</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs_navbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="/index.html">首页</a></li>
+              <li><a href="/html/manage.html">职位管理</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li data-toggle="modal" data-target="#myModal"><a href="#">登录</a></li>
+              <li data-toggle="modal" data-target="#resmyModal"><a href="#">注册</a></li>
+              <!-- 模态框 -->
+              <!-- 用户登录 -->
+              <div class="modal fade row" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="myModalLabel">用户登录</h4>
+                    </div>
+                    <div class="modal-body col-md-10 col-md-offset-1">
+                      <form>
+                    <div class="form-group col-md-10 col-md-offset-1">
+                      <label for="exampleInputEmail1">用户名：</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="请输入用户名">
+                    </div>
+                    <div class="form-group col-md-10 col-md-offset-1">
+                      <label for="exampleInputPassword1">密码：</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="请输入密码">
+                    </div>
+                  </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                      <button type="button" class="btn btn-primary">登录</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 用户注册 -->
+               <div class="modal fade" id="resmyModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="myModalLabel">用户注册</h4>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">用户名：</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="请输入用户名">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">密码：</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="请输入密码">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">确认密码：</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="请确认输入的密码">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Email：</label>
+                      <input type="email" class="form-control" id="exampleInputPassword1" placeholder="请输入真实的邮箱">
+                    </div>
+                  </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                      <button type="button" class="btn btn-primary">注册</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </nav>
+      </div>
+    </header>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>职位管理</title>
+    <link rel="stylesheet" type="text/css" href="/lib/bootstrap/css/bootstrap.min.css">
+    <script type="text/javascript" src="/lib/requirejs/require.js" data-main="/javascripts/manage"></script>
+    <style type="text/css">
+        .table{
+            width: 80%;
+            font-size: 12px;
+        }
+        .row{
+            width: 100%;
+            margin:0 auto;
+        }
+        .table img{
+            width: 30px;
+            height: 30px;
+        }
+        .thead{
+            font-weight: bold;
+        }
+        .breadcrumb{
+            margin-bottom: 2px;
+            width: 81%;
+        }
+        .btn{
+            float: right;
+        }
+        .breadcrumb{
+            background: white;
+        }
+        .foot{
+            width: 77%;
+            margin:0 auto;
+        }
+        .pagination{
+            float: right;
+        }
+        .modal,.form-group,.form-control{
+            font-size: 12px;
+        }
+        .modal-title{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="row">
+            <ol class="breadcrumb col-md-10 col-md-offset-1">
+              <li>职位管理</li>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalxx">添加</button>
+              <!-- Modal -->
+                <div class="modal fade" id="myModalxx" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="myModalLabel">职位信息</h4>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                     <div class="form-group">
+                        <label for="exampleInputFile">公司logo</label>
+                        <input type="file" class="form-control" id="exampleInputFile">
+                      </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">职位名称</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="请输入职位名称">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">公司名称</label>
+                      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="请输入公司名称">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">工作经验</label>
+                      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="工作经验或经历">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">职位类型</label>
+                      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="请输入职位类型">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">工作地点</label>
+                      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="请输入地点">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">岗位薪资</label>
+                      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="请输入岗位薪资">
+                    </div>
+                  </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                      <button type="button" class="btn btn-primary">添加</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ol>
+            <table class="table table-bordered col-md-6 col-md-offset-1">
+                <thead class="thead">
+                    <tr>
+                        <td>序号</td>
+                        <td>公司logo</td>
+                        <td>职位名称</td>
+                        <td>公司名称</td>
+                        <td>工作经验</td>
+                        <td>职称类型</td>
+                        <td>工作地点</td>
+                        <td>职位薪资</td>
+                        <td>操作</td>
+                    </tr>
+                </thead>
+                <tbody class="tbody">
+                    <tr>
+                        <td>1</td>
+                        <td><img src="/images/touch-icon-iphone.png"></td>
+                        <td>dd</td>
+                        <td>qq</td>
+                        <td>ww</td>
+                        <td>ewq</td>
+                        <td>eq</td>
+                        <td>a</td>
+                        <td>
+                            <a href="#">修改</a>
+                            <a href="#">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><img src="/images/touch-icon-iphone.png"></td>
+                        <td>dd</td>
+                        <td>qq</td>
+                        <td>ww</td>
+                        <td>ewq</td>
+                        <td>eq</td>
+                        <td>a</td>
+                        <td>
+                            <a href="#">修改</a>
+                            <a href="#">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><img src="/images/touch-icon-iphone.png"></td>
+                        <td>dd</td>
+                        <td>qq</td>
+                        <td>ww</td>
+                        <td>ewq</td>
+                        <td>eq</td>
+                        <td>a</td>
+                        <td>
+                            <a href="#">修改</a>
+                            <a href="#">删除</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="foot">
+            <ul class="pagination">
+                <li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">2 <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">3 <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">4 <span class="sr-only">(current)</span></a></li>
+                <li><a href="#" aria-label="Previous"><span aria-hidden="true">&raquo;</span></a></li>
+            </ul>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
